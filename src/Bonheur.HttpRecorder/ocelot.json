@@ -1,0 +1,21 @@
+{
+  "GlobalConfiguration": {
+    "BaseUrl": "http://localhost:5024;https://localhost:7024"
+  },
+  "Routes": [
+    {
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "10.0.8.34",
+          "Port": 6080
+        }
+      ],
+      "DownstreamPathTemplate": "/{url}",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [
+        "Get"
+      ],
+      "UpstreamPathTemplate": "/{url}"
+    }
+  ]
+}
