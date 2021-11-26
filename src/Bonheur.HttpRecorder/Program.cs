@@ -1,3 +1,4 @@
+using Bonheur.HttpRecorder.Middlewares;
 using Ocelot.DependencyInjection;
 using Ocelot.Middleware;
 
@@ -11,6 +12,7 @@ builder.Services.AddOcelot();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
+app.UseMiddleware<RecorderMiddleware>();
 app.UseOcelot().Wait();
 
 app.Run();

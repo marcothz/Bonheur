@@ -12,9 +12,7 @@
       ],
       "DownstreamPathTemplate": "/{url}",
       "DownstreamScheme": "http",
-      "UpstreamHttpMethod": [
-        "Get"
-      ],
+      "UpstreamHttpMethod": [],
       "UpstreamPathTemplate": "/{url}"
     }
   ]
